@@ -1,8 +1,11 @@
 name: scrape-daily.yaml
 
 on:
-  push:
-    branches: main
+  push
+  # schedule:
+  #   # Runs daily at 00:00 UTC
+  #   - cron: '0 0 * * *'
+        branches: main
 
 permissions:
   contents: write
