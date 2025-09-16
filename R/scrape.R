@@ -28,6 +28,6 @@ for(date in days_wanted) {
     news_file <- json_data_raw$articles |>
       as.data.frame()
 
-    # Write out today's data
+    # Write out data
     write.csv(news_file, glue::glue("csv/{date}.csv"), row.names = FALSE)
 }
