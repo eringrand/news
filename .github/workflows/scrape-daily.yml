@@ -24,7 +24,7 @@ jobs:
 
       # Execute the script
       - name: Run a script with a secret
-        run: Rscript scrape.R
+        run: Rscript R/scrape.R
         env:
           NEWS_API_KEY: ${{ secrets.NEWS_API_KEY }}
 
