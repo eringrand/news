@@ -9,6 +9,9 @@ today <- today()
 days_wanted <- seq(start_date, today, by = 1)
 
 for(date in days_wanted) {
+  date <- as.Date(date)
+  print(date)
+
   if(file.exists(glue::glue("csv/{date}.csv"))) {
     next
   }
