@@ -1,9 +1,10 @@
 name: scrape-daily.yaml
 
 on:
-  schedule:
+  push
+  #schedule:
     # Runs daily at 00:00 UTC
-    - cron: '0 0 * * *'
+    #- cron: '0 0 * * *'
 
 permissions:
   contents: write
